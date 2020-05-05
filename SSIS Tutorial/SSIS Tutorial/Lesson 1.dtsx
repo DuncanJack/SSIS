@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{B1120F15-0011-4F27-9A81-1BFBB297D41A}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{57092DB3-4E53-432B-9A03-62EB9D5767F1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -786,38 +786,82 @@ where [refTable].[FullDateAlternateKey] = ?</property>
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="220.5,42"
-          Id="Package\Extract Sample Currency Data\Extract Sample Currency Data"
-          TopLeft="72,31.3333334409528" />
-        <NodeLayout
-          Size="179.5,42"
           Id="Package\Extract Sample Currency Data\Lookup Currency Key"
-          TopLeft="132.5,143.541665953687" />
+          TopLeft="146.589285714286,131.591269372613" />
+        <NodeLayout
+          Size="220.5,42"
+          Id="Package\Extract Sample Currency Data\Lookup Date Key"
+          TopLeft="146.589285714286,231.849205304272" />
+        <NodeLayout
+          Size="220.5,42"
+          Id="Package\Extract Sample Currency Data\Extract Sample Currency Data"
+          TopLeft="146.589285714286,31.3333334409528" />
+        <NodeLayout
+          Size="220.5,42"
+          Id="Package\Extract Sample Currency Data\Sample OLE DB Destination"
+          TopLeft="146.589285714286,332.107141235932" />
         <EdgeLayout
-          Id="Package\Extract Sample Currency Data.Paths[Flat File Source Output]"
-          TopLeft="182.25,73.3333334409528">
+          Id="Package\Extract Sample Currency Data.Paths[Lookup Match Output1]"
+          TopLeft="256.839285714286,273.849205304272">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="40,70.2083325127347"
+              EndConnector="0,58.2579359316597"
               Start="0,0"
-              End="40,62.7083325127347">
+              End="0,50.7579359316597">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.1041662563673" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.1041662563673"
-                    Point2="0,35.1041662563673"
-                    Point3="4,35.1041662563673" />
+                    End="0,50.7579359316597" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,19.5742804658299,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Sample Currency Data.Paths[Lookup Match Output]"
+          TopLeft="256.839285714286,173.591269372613">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58.2579359316597"
+              Start="0,0"
+              End="0,50.7579359316597">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="36,35.1041662563673" />
-                  <mssgle:CubicBezierSegment
-                    Point1="36,35.1041662563673"
-                    Point2="40,35.1041662563673"
-                    Point3="40,39.1041662563673" />
+                    End="0,50.7579359316597" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,19.5742804658299,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Sample Currency Data.Paths[Flat File Source Output]"
+          TopLeft="256.839285714286,73.3333334409528">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58.2579359316597"
+              Start="0,0"
+              End="0,50.7579359316597">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="40,62.7083325127347" />
+                    End="0,50.7579359316597" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -826,86 +870,13 @@ where [refTable].[FullDateAlternateKey] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="159.5,42"
-          Id="Package\Extract Sample Currency Data\Lookup Date Key"
-          TopLeft="192.142857142857,237.559522629553" />
-        <EdgeLayout
-          Id="Package\Extract Sample Currency Data.Paths[Lookup Match Output]"
-          TopLeft="222.25,185.541665953687">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="49.6428571428571,52.0178566758654"
-              Start="0,0"
-              End="49.6428571428571,44.5178566758654">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.0089283379327" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.0089283379327"
-                    Point2="0,26.0089283379327"
-                    Point3="4,26.0089283379327" />
-                  <mssgle:LineSegment
-                    End="45.6428571428571,26.0089283379327" />
-                  <mssgle:CubicBezierSegment
-                    Point1="45.6428571428571,26.0089283379327"
-                    Point2="49.6428571428571,26.0089283379327"
-                    Point3="49.6428571428571,30.0089283379327" />
-                  <mssgle:LineSegment
-                    End="49.6428571428571,44.5178566758654" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-23.3699581473214,31.0089283379327,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="211.5,42"
-          Id="Package\Extract Sample Currency Data\Sample OLE DB Destination"
-          TopLeft="189.714285714286,332.107141235932" />
-        <EdgeLayout
-          Id="Package\Extract Sample Currency Data.Paths[Lookup Match Output1]"
-          TopLeft="271.892857142857,279.559522629553">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="23.5714285714286,52.5476186063792"
-              Start="0,0"
-              End="23.5714285714286,45.0476186063792">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,22.2738093031896" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,22.2738093031896"
-                    Point2="0,26.2738093031896"
-                    Point3="4,26.2738093031896" />
-                  <mssgle:LineSegment
-                    End="19.5714285714286,26.2738093031896" />
-                  <mssgle:CubicBezierSegment
-                    Point1="19.5714285714286,26.2738093031896"
-                    Point2="23.5714285714286,26.2738093031896"
-                    Point3="23.5714285714286,30.2738093031896" />
-                  <mssgle:LineSegment
-                    End="23.5714285714286,45.0476186063792" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-36.4056724330357,31.2738093031896,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <AnnotationLayout
+          Text="The data flow extracts data from a file, looks up values in the CurrencyKey column in the DimCurrency table and&#xD;&#xA; the DateKey column in the DimDate table, and writes the data to the NewFactCurrencyRate table."
+          ParentId="Package\Extract Sample Currency Data"
+          FontInfo="{assembly:Null}"
+          Size="619.5,60"
+          Id="694f5407-a464-4c2b-a1d6-56a7560df48c"
+          TopLeft="154,450.666664428181" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -915,7 +886,7 @@ where [refTable].[FullDateAlternateKey] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -925,7 +896,7 @@ where [refTable].[FullDateAlternateKey] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -938,7 +909,7 @@ where [refTable].[FullDateAlternateKey] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -948,7 +919,7 @@ where [refTable].[FullDateAlternateKey] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
